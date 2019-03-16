@@ -17,6 +17,8 @@
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "jsdom": "^14.0.0",
+    "node-fetch": "^2.3.0",
+    "node-opus": "^0.3.1",
     "nodemon": "^1.18.9",
     "ts-node": "^8.0.3",
     "tumblr.js": "^2.0.0",

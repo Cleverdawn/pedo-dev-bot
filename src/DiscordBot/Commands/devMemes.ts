@@ -2,7 +2,7 @@ import logger from '../../Logger/index'
 import DevMemesFactory from '../../SourceManager/DevMemesFactory';
 import Command from './abs/Command';
 
-class DevMemesCommand extends Command {
+class DevMemes extends Command {
 	constructor () {
 		super();
 		this.name= 'devMemes';
@@ -39,8 +39,6 @@ class DevMemesCommand extends Command {
 	}
 
 	public async reactionHandler(reaction, user) : Promise<any>{
-		logger.info(`reaction : ${reaction._emoji.name} ; author : ${ user.tag } ; server : ${ reaction.message.guild ? reaction.message.guild.name : 'no guild '}`);
-
 		if(reaction.count === 2 && reaction._emoji.name === '➕') {
 			logger.info(`Dev Memes Command reaction ➕`);
 			return this.execute(reaction.message, null);
@@ -48,4 +46,4 @@ class DevMemesCommand extends Command {
 	}
 }
 
-export default new DevMemesCommand();
+export default new DevMemes();

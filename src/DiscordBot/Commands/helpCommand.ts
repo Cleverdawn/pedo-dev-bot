@@ -15,7 +15,8 @@ class HelpCommand extends Command {
 			`${'```Markdown' +
 			'\n# Actual Prefix : '}${ DiscordBot.getPrefix() }\n` +
 			'\n# Commands : ' +
-			'\n   - devMemes (shortcut : d) : random dev memes across the web ' +
+			'\n   - devMemes|d : random dev memes across the web ' +
+			'\n   - kamm-sb|ksb [quote] : plays quotes from Kaamelott in voice chat ! Ex : '+ DiscordBot.getPrefix() + 'ksb poulette' +
 			'\n   - help' +
 			'\n' +
 			'\n# GitHub :' +

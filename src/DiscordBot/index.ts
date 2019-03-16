@@ -85,6 +85,9 @@ class DiscordBot{
 				const command = this.bot.reactionsHandlers.get(reaction.message.nonce);
 	
 				if (!command) return;
+
+				logger.info(`reaction : ${reaction._emoji.name} ; author : ${ user.tag } ; server : ${ reaction.message.guild ? reaction.message.guild.name : 'no guild '}`);
+				
 				command.reactionHandler(reaction, user);
 			}
 		}
